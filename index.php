@@ -7,5 +7,6 @@
     </head>
     <body>
         <h1>TVA divisie Triathlon</h1>
+        <p>Op deze website komt over een korte tijd alles over de divisie-team van TVAlmere. <br><a href="http://tvalmere.nl">Terug naar TVAlmere.nl</a></p>
     </body>
 </html>
