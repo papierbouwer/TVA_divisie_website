@@ -9,14 +9,6 @@
         <title>TVA divisie Triathlon</title>
     </head>
     <body>
-        <?php
-
-        if(!isset($_GET['test']))
-        {
-            echo "<h1>TVA divisie Triathlon</h1><p>Op deze website komt over een korte tijd alles over het divisie-team van TVAlmere. <br><a href=\"http://tvalmere.nl\">Terug naar TVAlmere.nl</a></p>";
-        } else
-        {
-        ?>
         <div class="container">
             <header>
                 <div class="afbeelding">
@@ -57,8 +49,23 @@
                 </nav>
             </header>
             <article>
+                <div>
+                    <h1>
+                        TVA divisie Triathlon
+                    </h1>
+                    <p>Op deze website komt over een korte tijd alles over het divisie-team van TVAlmere. <br><a href="http://tvalmere.nl">Terug naar TVAlmere.nl</a></p>
+                    <h1>Koppen</h1>
+                    <h2>Koppen</h2>
+                    <h3>Koppen</h3>
+                    <h4>Koppen</h4>
+                    <h5>Koppen</h5>
+                    <h6>Koppen</h6>
+                </div>
             </article>
             <aside>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
             </aside>
             <div class="advertenties">
             </div>
@@ -66,10 +73,5 @@
                 &copy; 2016 - <?=date("Y");?> Erik Baalbergen
             </footer>
         </div>
-        <?php
-        }
-        ?>
-
-
     </body>
 </html>

@@ -14,6 +14,14 @@ a{
     background-color: #b8172a;
 }
 
+.navigatieAfbeelding{
+    min-height: 100%;
+    margin:auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: center;
+}
+
 nav ul{
     font-size: 1.2em;
     width: 100%;
@@ -43,11 +51,27 @@ nav ul li a{
 }
 
 article, aside{
-    background-color: #eeeeee;
+    background-color: #efefef;
     color: #707172;
+    display: block;
+}
+
+article div, aside div{
+    padding: 0.5em;
 }
 
 h3, h4, h5, h6{
     color: #e2001a;
     text-transform: uppercase;
+}
+
+article{
+    width: calc(75% - 1px);
+    float: left;
+    border-right: 1px dashed #707172;
+}
+
+aside{
+    width: 25%;
+    float: right;
 }
