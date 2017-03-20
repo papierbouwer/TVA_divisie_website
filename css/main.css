@@ -1,0 +1,53 @@
+html{
+    background-color: #e2001a;
+    color: #eeeeee;
+}
+
+a{
+    text-decoration: none
+}
+
+.container{
+    width: 80%;
+    max-width: 1400px;
+    margin:auto;
+    background-color: #b8172a;
+}
+
+nav ul{
+    font-size: 1.2em;
+    width: 100%;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    height: 3em;
+    width: 20%;
+    display: inline-block;
+    transition: background-color 0.5s;
+    padding: 0.9em;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+
+nav ul li:hover{
+    background-color: #9f3440;
+}
+
+nav ul li a{
+    color: #dddddd;
+}
+
+article, aside{
+    background-color: #eeeeee;
+    color: #707172;
+}
+
+h3, h4, h5, h6{
+    color: #e2001a;
+    text-transform: uppercase;
+}

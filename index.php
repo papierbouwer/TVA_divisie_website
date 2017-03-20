@@ -63,6 +63,7 @@
             <div class="advertenties">
             </div>
             <footer>
+                &copy; 2016 - <?=date("Y");?> Erik Baalbergen
             </footer>
         </div>
         <?php
