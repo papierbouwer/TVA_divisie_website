@@ -60,9 +60,14 @@ article div, aside div{
     padding: 0.5em;
 }
 
+h1, h2{
+    font-family: "Cabin Condensed";
+}
+
 h3, h4, h5, h6{
     color: #e2001a;
     text-transform: uppercase;
+    font-family: "Cabin Condensed";
 }
 
 article{
