@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="nl-NL" prefix="og: http://ogp.me/ns#">
+<head>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+		function loadJS(u) {
+			var r = document.getElementsByTagName( "script" )[ 0 ],
+				s = document.createElement( "script" );
+			s.src = u;
+			r.parentNode.insertBefore( s, r );
+		}
+
+		if(!window.HTMLPictureElement){
+		    document.createElement('picture');
+		    loadJS("https://www.protagonist.nl/assets/scripts/source/respimage.min.js");
+		}
+
+		var curpage = [];
+		var CONTEXT_ROOT = "/";
+	</script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Protagonist - Zorgeloos in de cloud.</title>
+	<meta name="author" content="Protagonist">
+
+	<meta name="description" content='De hosting van Protagonist kenmerkt zich door betrouwbaarheid, service en flexibiliteit. Protagonist: zorgeloos in de cloud.'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="https://cdn.protagonist.nl/v16/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.protagonist.nl/v16/assets/images/apple-touch-icon-180x180.png">
+
+	<!-- Styling -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="https://cdn.protagonist.nl/v16/assets/styles/styles.css">
+	<link rel="stylesheet" href="https://cdn.protagonist.nl/v16/assets/styles/jquery.auto-complete.css">
+
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@ProtagonistBV">
+		<meta name="twitter:title" content='Protagonist - Zorgeloos in de cloud.'>
+		<meta name="twitter:description" content='De hosting van Protagonist kenmerkt zich door betrouwbaarheid, service en flexibiliteit. Protagonist: zorgeloos in de cloud.'>
+		<meta name="twitter:image" content='https://cdn.protagonist.nl/v16/assets/images/icons/logo-square-big-790.png'>
+
+
+
+		<meta property="og:locale" content="nl_NL">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Protagonist">
+		<meta property="og:title" content='Protagonist - Zorgeloos in de cloud.'>
+		<meta property="og:description" content='De hosting van Protagonist kenmerkt zich door betrouwbaarheid, service en flexibiliteit. Protagonist: zorgeloos in de cloud.>'>
+		<meta property="og:url" content='https://www.protagonist.nl'>
+		<meta property="og:image" content='https://cdn.protagonist.nl/v16/assets/images/icons/logo-square-big-790.png'>
+
+
+</head>
+
+
+	<body class="home">
+		<header id="header" class="bg-light-gray">
+			<div class="container">
+				<div class="row padding-sm align-vertical-center">
+					<div class="col-xs-12">
+						<h1><span class="logo color-red">Protagonist</span> <br><span class="sub">Zorgeloos in de cloud.</span></h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+	<div id="navigation" role="navigation" class="container">
+		<div class="row align-vertical-center nav-bar">
+			<div class="col-xs-12">
+
+				<nav class="nav-menu">
+					<span class="menu-btn"></span>
+					<ul role="menubar">
+						<li role="presentation"><a href="https://www.protagonist.nl/hosting" title="Hosting van Protagonist" role="menuitem">Hosting</a></li>
+						<li role="presentation"><a href="https://www.protagonist.nl/webdesign" title="Laat je website ontwerpen en bouwen door Protagonist" role="menuitem">Webdesign</a></li>
+						<li role="presentation"><a href="https://www.protagonist.nl/webshop" title="Start jouw eigen webshop met Protagonist" role="menuitem">Webshop</a></li>
+						<li role="presentation"><a href="https://www.protagonist.nl/clouddiensten" title="Stroomlijn bedrijfsprocessen met de clouddiensten van Protagonist" role="menuitem">Clouddiensten</a></li>
+						<li role="presentation"><a href="https://www.protagonist.nl/support" title="Hulp nodig? Protagonist staat voor je klaar!" role="menuitem">Support</a></li>
+
+						<li role="presentation"><a href="https://www.protagonist.nl/login" title="Inloggen" role="menuitem" class="login" id="login-btn">Login</a></li>
+
+						<li role="presentation"><a href="https://www.protagonist.nl/bestellen/1-domeinen-toevoegen" title="Bekijk de inhoud van jouw winkelwagen " role="menuitem" class="shop">Shop <span class="circle" id="winkelwagen-count">0</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<main class="container bg-light-gray">
+		<section id="domain-check" class="padding">
+			<form action="https://www.protagonist.nl/domeinen" method="POST">
+        <div class="row">
+          <div class="col-md-4 col-xs-4">
+              <img src="https://cdn.protagonist.nl/v16/assets/images/icons/icon-verhuizen-full-square-460.jpg" class="responsive circle margin-bottom-sm" alt="Verhuizen">
+          </div>
+          <div class="col-md-8 padding">
+            <div class="row margin-bottom-sm">
+              <div class="col-xs-12">
+                <h2 class="margin-bottom-sm">Deze domeinnaam is geregistreerd door een klant van <a href="https://www.protagonist.nl/">Protagonist</a></h2>
+                <h2>Is jouw domein nog beschikbaar?</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 margin-bottom-sm">
+                <div>
+                  <input type="text" name="domein" placeholder="Typ hier jouw domein" value='' class="bg-white">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div>
+                  <button class="btn btn-red lg" type="submit">Check</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</form>
+		</section>
+
+	<section id="reviews">
+	<div class="rel">
+		<div class="bg-image dark">
+			<img src="https://cdn.protagonist.nl/v16/assets/images/photos/cases-tdh-04-banner-480.jpg"
+			  srcset="https://cdn.protagonist.nl/v16/assets/images/photos/cases-tdh-04-banner-480.jpg 480w,
+			    https://cdn.protagonist.nl/v16/assets/images/photos/cases-tdh-04-banner-768.jpg 768w,
+			    https://cdn.protagonist.nl/v16/assets/images/photos/cases-tdh-04-banner-1024.jpg 1024w,
+			    https://cdn.protagonist.nl/v16/assets/images/photos/cases-tdh-04-banner-1224.jpg 1224w,
+			    https://cdn.protagonist.nl/v16/assets/images/photos/cases-tdh-04-banner-1580.jpg 1580w"
+			  alt="TDH"
+			>
+		</div>
+		<div class="row padding">
+			<div class="col-md-4 color-white align-center">
+				<div class="color-red margin-bottom-sm">
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+				</div>
+				<p><a href="http://www.ispgids.com/isp/protagonist" target="_blank" title="Lees de reviews over Protagonist op ISPgids.com" class="h2 color-white">ISPgids.com</a><br>328 beoordelingen</p>
+				<p>&ldquo;Fijne partij om mee samen te werken. Zowel online als telefonisch goed bereikbaar.&rdquo;</p>
+				<p class="sm">Suzanne Bekkers,<br>CRH Mobile Fencing & Security</p>
+			</div>
+
+			<div class="col-md-4 color-white align-center">
+				<div class="color-red margin-bottom-sm">
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+				</div>
+				<p><a href="https://nl.trustpilot.com/review/www.protagonist.nl" target="_blank" title="Lees de reviews over Protagonist op Trustpilot" class="h2 color-white">Trustpilot.com</a><br>102 beoordelingen</p>
+				<p>&ldquo;Stabiele en snelle servers met een vlotte en vriendelijke klantenservice.&rdquo;</p>
+				<p class="sm">Patrick</p>
+			</div>
+
+			<div class="col-md-4 color-white align-center">
+				<div class="color-red margin-bottom-sm">
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star"></span>
+					<span class="icon-star color-white"></span>
+				</div>
+				<p><a href="http://www.webhosters.nl/webhosting-providers/protagonist-nl/" target="_blank" title="Lees de reviews over Protagonist op Webhosters.nl" class="h2 color-white">Webhosters.nl</a><br>223 beoordelingen</p>
+				<p>&ldquo;Wat het probleem ook is. De mensen van Protagonist zorgen er voor dat dit zo snel mogelijk wordt opgelost. Altijd op een vriendelijke en correct manier. Waarvoor mijn dank.&rdquo;</p>
+				<p class="sm">H.J. Burgwal, N.Y.T.C</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+	</main>
+
+
+
+
+
+
+
+<footer id="footer">
+	<div class="container" itemscope itemtype="http://schema.org/Organization">
+
+		<div class="row padding-sides-none bg-light-gray">
+			<div class="col-md-6 padding padding-sides">
+				<div class="row padding-sides-none align-center">
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+						<div>
+							<img src="https://cdn.protagonist.nl/v16/assets/images/icons/icon-telefoon-full-square-300.jpg" alt="" class="responsive circle margin-bottom-sm">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-12 col-lg-8 col-xl-8">
+						<p class="xl margin-bottom-sm">Telefoon</p>
+						<meta itemprop="telephone" content="0883334444">
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<span class="sm">(lokaal tarief)<br></span>
+								<a href="tel:0883334444" title="Bel met Protagonist">088 333 4444</a>
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<span class="sm">Fax<br></span>
+								<a href="tel:+0883334445" title="Bel met Protagonist">088 333 4445</a>
+							</div>
+						</div>
+						<p class="sm">ma-do: 09.00 - 17.30, vrij: 09.00 - 16.30</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 padding padding-sides">
+				<div class="row padding-sides-none align-center">
+					<div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-4">
+						<div>
+							<img src="https://cdn.protagonist.nl/v16/assets/images/icons/icon-email-full-square-300.jpg" alt="" class="responsive circle margin-bottom-sm">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-8 col-md-12 col-lg-8 col-xl-8">
+						<p class="xl margin-bottom-sm">E-mail</p>
+						<meta itemprop="email" content="support@protagonist.nl">
+						<p>
+							<a href="mailto:sales@protagonist.nl" title="Vragen over jouw bestelling? Neem contact op met onze sales afdeling.">sales@protagonist.nl</a><br>
+					  		<a href="mailto:support@protagonist.nl" title="Loop je tegen een probleem aan met jouw website? Neem contact op met onze support afdeling.">support@protagonist.nl</a><br>
+							<a href="mailto:administratie@protagonist.nl" title="Vragen over facturen? Neem contact op met onze administratie.">administratie@protagonist.nl</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<form action="https://www.protagonist.nl/nieuwsbrief" method="POST">
+			<div class="row align-vertical-center bg-red">
+				<div class="col-md-3 col-lg-3 col-xl-2 padding-sm">
+					<span class="lg color-white">Nieuwsbrief</span>
+				</div>
+				<div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 align-right padding-sm">
+					<input type="text" name="email" placeholder="e-mailadres">
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-2 padding-sm">
+					<button class="btn btn-dark-gray lg" name="inschrijven" type="submit">Inschrijven</button>
+				</div>
+			</div>
+		</form>
+
+		<div class="row padding padding-sides-none">
+			<div class="col-lg-4 margin-bottom">
+				<div class="row align-vertical-center">
+					<div class="col-sm-6 col-lg-12 margin-bottom-sm">
+						<div class="color-white">
+							<h4 class="h1 color-red" itemprop="name">Protagonist BV</h4>
+							<meta itemprop="logo" content="https://cdn.protagonist.nl/v16/assets/images/logo.svg">
+							<meta itemprop="image" content="https://cdn.protagonist.nl/v16/assets/images/protagonist_searchengines.jpg">
+							<meta itemprop="url" content="https://www.protagonist.nl">
+
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-12">
+						<div class="color-white">
+							<span class="color-red">Adres</span>
+							<p class="sm" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Protagonist BV<br>
+							<span itemprop="streetAddress">Westblaak 142</span><br>
+							<span itemprop="postalCode">3012 KM</span> <span itemprop="addressLocality">Rotterdam</span><br>
+							<br>
+							<span class="color-red">Kvk:</span> <span>24303167</span></br>
+							<span class="color-red">IBAN:</span> <span>NL60 RABO 0122 0589 25</span></br>
+							<span class="color-red">BTW nummer:</span> <span>NL8124.98.434.B01</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-3 col-lg-2">
+				<h4 class="margin-bottom-sm color-white">Diensten</h4>
+				<ul class="list-none nav-footer">
+					<li><a href="https://www.protagonist.nl/hosting" title="Hosting van Protagonist">Hosting</a></li>
+					<li><a href="https://www.protagonist.nl/webdesign" title="Laat jouw website ontwerpen en bouwen door Protagonist">Webdesign</a></li>
+					<li><a href="https://www.protagonist.nl/webshop" title="Start jouw eigen webshop met Protagonist">Webshop</a></li>
+					<li><a href="https://www.protagonist.nl/domeinen" title="Registreer jouw domeinen bij Protagonist">Domeinen</a></li>
+					<li><p></p></li>
+
+					<li><a href="https://www.protagonist.nl/login" title="Controlpanel">Control panel</a></li>
+
+					<li><a href="https://www.protagonist.nl/login" title="Webmail">Webmail</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-3 col-lg-2">
+				<h4 class="margin-bottom-sm color-white"><a href="https://www.protagonist.nl/clouddiensten" title="Bekijk alle clouddiensten van Protagonist" class="color-white">Clouddiensten</a></h4>
+				<ul class="list-none nav-footer">
+					<li><a href="https://www.protagonist.nl/clouddiensten/seo" title="De one-stop totaaloplossing voor SEO management">Strawberry SEO</a></li>
+					<li><a href="https://www.protagonist.nl/clouddiensten/hosted-exchange" title="Beheer jouw e-mailverkeer in de cloud">Hosted Exchange</a></li>
+					<li><a href="https://www.protagonist.nl/clouddiensten/online-backup" title="Bewaar een veilige backup van al jouw bestanden in de cloud">Online Back-up</a></li>
+					<li><a href="https://www.protagonist.nl/clouddiensten/ssl" title="Beveilig jouw website met een SSL certificaat">SSL Certificaten</a></li>
+					<li><a href="https://www.protagonist.nl/clouddiensten/cloudflare" title="Versnel de laadtijd van jouw website met Cloudflare">Cloudflare</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-3 col-lg-2">
+				<h4 class="margin-bottom-sm color-white"><a href="https://www.protagonist.nl/support" title="Hulp nodig? Support van Protagonist helpt je op weg." class="color-white">Support</a></h4>
+				<ul class="list-none nav-footer">
+					<li><a href="https://www.protagonist.nl/support#emailsupport" title="">Contact</a></li>
+					<li><a href="https://www.protagonist.nl/support#teamviewer" title="">Teamviewer</a></li>
+					<li><a href="https://cdn.protagonist.nl/downloads/Algemene Voorwaarden_Prota.pdf" title="">Voorwaarden</a></li>
+					<li><a href="https://www.protagonist.nl/support#onderhoud" title="">Service meldingen</a></li>
+					<li><a href="https://www.protagonist.nl/support#handleidingen" title="">Handleidingen</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-3 col-lg-2">
+				<h4 class="margin-bottom-sm color-white"><a href="https://www.protagonist.nl/over-protagonist" title="Kom meer te weten over Protagonist" class="color-white">Bedrijf</a></h4>
+				<ul class="list-none nav-footer">
+					<li><a href="https://www.protagonist.nl/over-protagonist" title="">Over Protagonist</a></li>
+					<li><a href="https://www.protagonist.nl/over-protagonist#team" title="Het team dat Protagonist draaiende houdt.">Team</a></li>
+					<li><a href="https://www.protagonist.nl/blog/" title="Blijf op de hoogte met het laatste nieuws van Protagonist">Blog</a></li>
+					<li><a href="https://cdn.protagonist.nl/downloads/Service Level Agreement Prota.pdf" title="Service Level Agreement">SLA</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div id="outdated">
+	<h6>Jouw browser is verouderd</h6>
+	<p>Houd voor een betere ervaring jouw browser up to date. Klik hier voor de laatste versies. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/nl">Update mijn browser nu &raquo;</a></p>
+	<p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+
+<script>
+	//event listener: DOM ready
+	function addLoadEvent(func) {
+		var oldonload = window.onload;
+		if (typeof window.onload != 'function') {
+			window.onload = func;
+		} else {
+			window.onload = function() {
+				if (oldonload) {
+					oldonload();
+				}
+				func();
+			}
+		}
+	}
+	//call plugin function after DOM ready
+	addLoadEvent(function(){
+		outdatedBrowser({
+			lowerThan: 'transform',
+			languagePath: ''
+		})
+	});
+</script>
+<script src="https://www.protagonist.nl/protaweb/assets/scripts/protagonist.min.js"></script>
+
+</body>
+</html>
+

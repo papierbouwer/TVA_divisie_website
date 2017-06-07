@@ -1,10 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 html{
     background-color: #e2001a;
-    color: #eeeeee;
+    color: #eaeaea;
 }
 
 a{
-    text-decoration: none
+	color: #7B7C7D;
+    text-decoration: none;
+	border-bottom: 1px dashed #7B7C7D;
+}
+
+.handle{
+	font-size: 1.1em;
+	padding-left: 0.9em;
+	margin: 0;
+	border-bottom: 3px solid #9f3440;
+	display: none;
 }
 
 .container{
@@ -13,13 +27,19 @@ a{
     margin:auto;
     background-color: #b8172a;
 }
+.banner_afbeelding{
+	width: 100%;
+	height: 300px;
+	overflow:hidden;
+	text-align: center;
+	margin:0 auto;
+}
 
-.navigatieAfbeelding{
-    min-height: 100%;
-    margin:auto;
-    text-align: center;
-    display: table-cell;
-    vertical-align: center;
+.banner_afbeelding img {
+	height: 100%;
+	min-width:100%;
+	max-width:none;
+	margin:0 -100%;
 }
 
 nav ul{
@@ -28,19 +48,51 @@ nav ul{
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+	height: 3em;
 }
 
 nav ul li{
     float: left;
-    height: 3em;
     width: 20%;
     display: inline-block;
     transition: background-color 0.5s;
     padding: 0.9em;
-    box-sizing: border-box;
     border-bottom: none;
 }
+
+nav ul li.nav_multilink{
+	height: 3em;
+}
+
+nav ul li.nav_multilink:hover{
+	height: 100%;
+}
+
+
+nav ul li.nav_multilink:hover ul{
+	display: block;
+	opacity: 1;
+	animation: fade 0.3s linear;
+}
+
+@keyframes fade {
+  0%{ opacity: 0 }
+  100% { opacity: 1 }
+}
+
+li.nav_multilink ul{
+	display: none;
+	opacity: 0;
+	margin-top: 0.9em;
+	font-size: 1.0em;
+	position: relative;
+}
+
+li.nav_multilink ul li{
+	background-color: #b8172a;
+	width: 100%;
+}
+
 
 nav ul li:hover{
     background-color: #9f3440;
@@ -48,12 +100,20 @@ nav ul li:hover{
 
 nav ul li a{
     color: #dddddd;
+	border-bottom: none;
+}
+
+.midpage{
+	z-index: 1;
+	display: webkit-flex;
+	display: flex;
+	width: 100%;
+	height: 100%;
 }
 
 article, aside{
     background-color: #efefef;
     color: #707172;
-    display: block;
 }
 
 article div, aside div{
@@ -71,12 +131,139 @@ h3, h4, h5, h6{
 }
 
 article{
-    width: calc(75% - 1px);
+    width: 70%;
     float: left;
     border-right: 1px dashed #707172;
+	border-bottom: 1px dashed #707172;
+}
+
+table{
+	margin: 0;
+	border: 1px solid #7B7C7D;
+}
+
+table tr{
+	color: #777;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+table thead tr{
+	background-color: #d3d3d3;
+	border-bottom: 2px solid black;
+}
+
+table tbody tr:nth-child(odd){
+	background-color: #e2e2e2;
+}
+
+table tbody tr:nth-child(even){
+	background-color: #c4c4c4;
+}
+
+table td{
+	padding: 0;
+	margin: 0;
+	border-right: 1px dashed #707172;
 }
 
 aside{
-    width: 25%;
+    width: 30%;
     float: right;
+	border-bottom: 1px dashed #707172;
+}
+
+footer{
+	padding: 0.3em;
+	text-align: center;
+}
+
+footer a{
+	color: #eaeaea;
+}
+
+.advertenties{
+	border-top: 1px dashed #707172;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .container{
+        width: 90%;
+    }
+	
+	.banner_afbeelding{
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	nav ul{
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+	.midpage{
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+	
+	.handle{
+		display: block;
+	}
+	
+	article{
+		width: 100%;
+		border-right: none;
+	}
+	
+	aside{
+		width: 100%;
+		border-top: 1px dashed #707172;
+	}
+	
+	nav ul{
+		display: none;
+	}
+
+	nav ul li.nav_multilink{
+		height: 15em;
+	}
+	
+	nav ul li.nav_multilink ul{
+		opacity: 1;
+		display: block;
+	}
+	
+	nav ul li.nav_multilink ul li{
+		background-color: #b40e17;
+	}
+	
+	nav ul li.nav_multilink:hover ul{
+		animation: none;
+	}
+	
+	nav ul li{
+		width: 100%;
+	}
+	
 }
